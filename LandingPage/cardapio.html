@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardapioDaMassa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop.css">
+</head>
+<header>
+  <nav class="menu">
+    <div class="logo">
+      <img src="img/polos.png" alt="Los Pollos Hermanos">
+    </div>
+    <ul class="menu-list">
+      <span class="separator">◆</span>
+      <li><a href="./index.html">Nossa Historia</a></li>
+      <span class="separator">◆</span>
+      <li><a href="./empregados.html">Empregados</a></li>
+      <span class="separator">◆</span>
+      <li><a href="./cardapio.html">Cardapio</a></li>
+    </ul>
+  </nav>   
+</header>
+
+<body>
+ <main class ="cardapio">
+  <h1>Nosso Cardapio</h1>
+  <div class=" produtos">
+    <div class="produto" onclick="abrirModal('modal1')">
+      <img src="/img/FrangoFrito.png" alt="Frangao FRITU">
+      <h2>Frango Frito Basico</h2>
+    </div>
+
+    <div class="produto" onclick="abrirModal('modal2')">
+      <img src="/img/frangoPimenta.png" alt="Frangao Pimenta">
+      <h2>Frango Frito Apimentado</h2>
+    </div>
+
+    <div class="produto" onclick="abrirModal('modal3')">
+      <img src="/img/baldeFrango.png" alt="Baldao">
+      <h2>Combo do Balde</h2>
+    </div>
+
+  </div>
+ </main>
+
+ <div id="modal1" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharModal('modal1')">X</span>
+    <h2>Frango Frito Basico</h2>
+    <p>Aquela Crocancia por fora e uma suculencia por dentro. O mais pedido.</p>
+  </div>
+ </div>
+
+ <div id="modal2" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharModal('modal2')">X</span>
+    <h2>Frango Apimentado</h2>
+    <p>Com aquela pimentinha. So para os fortes.</p>
+  </div>
+ </div>
+
+ 
+ <div id="modal3" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharModal('modal3')">X</span>
+    <h2>Combo Balde</h2>
+    <p>Uma quantidade consideravel de Frango no Balde + molho + batata frita. Apenas Perfeito.</p>
+  </div>
+ </div>
+
+ <script src = "script.js"></script>
+
+</body>
+
+
+<footer class="footer">
+  <div class="footer-conteudo">
+    <div class="footer-info">
+      <p><strong>Contato:</strong> (99) 99999-9999</p>
+      <p><strong>Email:</strong> contato@lospolloshermanos.com</p>
+    </div>
+    
+    <div class="footer-social">
+      <a href="https://www.instagram.com/lospolloshermanos" target="_blank">
+        <img src="img/instagram-removebg-preview.png" alt="Instagram" class="insta-icon">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-msg">
+    <p>Veio no Los Pollos Hermanos? Compartilhe sua experiência <strong>#amoLosPollosHermanos</strong></p>
+  </div>
+</footer>
+</html>
